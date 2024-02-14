@@ -2,7 +2,7 @@ import { render } from "@react-email/render";
 import WelcomeTemplate from "../../../emails";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_dY63FMo2_KwGmSRUzYNufehYN27agbsaj");
 
 export async function POST(request: Request, res: Response) {
 	// rate limit
