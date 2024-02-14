@@ -11,7 +11,7 @@ export async function POST(request: Request, res: Response) {
 	const { email, userFirstname } = await request.json();
 
 	const { data, error } = await resend.emails.send({
-		from: "Acme <noreply@your_domain.com>",
+		from: "Acme <onboarding@resend.dev>",
 		to: [email],
 		subject: "Thank you",
 		html: render(WelcomeTemplate({ userFirstname })),
